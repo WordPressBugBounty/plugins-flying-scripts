@@ -6,7 +6,7 @@ Tags: defer javascript, 3rd party scripts
 Requires at least: 4.5
 Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ Events from the user like mouse hover, scroll, keyboard input, touch in mobile d
 Even if there is no user interaction, scripts will be executed after the specified timeout.
 
 == Changelog ==
+
+= 1.2.4 =
+- Updated list of event listeners to trigger user interaction
 
 = 1.2.3 =
 - Increased DOM size limit

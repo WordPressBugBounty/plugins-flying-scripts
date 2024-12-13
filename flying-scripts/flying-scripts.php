@@ -5,7 +5,7 @@
  * Description: Delay JavaScript to boost speed by loading scripts only when needed, reducing render-blocking for faster loading and a smoother user experience.
  * Author: WP Speed Matters
  * Author URI: https://wpspeedmatters.com/
- * Version: 1.2.3
+ * Version: 1.2.4
  * Text Domain: flying-scripts
  */
 
@@ -15,7 +15,7 @@ if (! defined('WPINC')) {
 }
 
 // Define constant with current version
-define('FLYING_SCRIPTS_VERSION', '1.2.3');
+define('FLYING_SCRIPTS_VERSION', '1.2.4');
 
 include('init-config.php');
 include('settings/index.php');
