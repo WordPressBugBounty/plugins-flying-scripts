@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Flying Scripts: Delay JavaScript to Improve Site Speed & Performance
+ * Plugin Name: Flying Scripts
  * Plugin URI: https://wordpress.org/plugins/flying-scripts/
  * Description: Delay JavaScript to boost speed by loading scripts only when needed, reducing render-blocking for faster loading and a smoother user experience.
  * Author: WP Speed Matters

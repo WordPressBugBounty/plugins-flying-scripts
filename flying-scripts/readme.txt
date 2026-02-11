@@ -4,7 +4,7 @@ Contributors: gijo
 Donate link: https://www.buymeacoffee.com/gijovarghese
 Tags: defer javascript, 3rd party scripts
 Requires at least: 4.5
-Tested up to: 6.6
+Tested up to: 6.9
 Requires PHP: 5.6
 Stable tag: 1.2.4
 License: GPLv2 or later
