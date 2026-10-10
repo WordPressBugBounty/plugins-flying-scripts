@@ -32,6 +32,11 @@ function flying_scripts_rewrite_html($html)
         }
 
 
+        // Do not let input impersonate the parser's internal placeholders.
+        if (strpos($html, '___noise___') !== false) {
+            return $html;
+        }
+
         // Parse HTML
         $newHtml = str_get_html($html);
 
