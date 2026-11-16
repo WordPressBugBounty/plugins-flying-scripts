@@ -8,11 +8,13 @@ function flying_scripts_format_list($list) {
 function flying_scripts_settings_scripts() {
 
     if (isset($_POST['submit'])) {
-        update_option('flying_scripts_timeout', sanitize_text_field($_POST['flying_scripts_timeout']));
+        if (isset($_POST['flying_scripts_timeout'])) {
+            flying_scripts_save_timeout($_POST['flying_scripts_timeout']);
+        }
         update_option('flying_scripts_include_list', flying_scripts_format_list($_POST['flying_scripts_include_list']));
     }
 
-    $timeout = get_option('flying_scripts_timeout');
+    $timeout = flying_scripts_get_timeout();
     $include_list = get_option('flying_scripts_include_list');
 
     ?>

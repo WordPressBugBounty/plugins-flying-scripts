@@ -6,7 +6,7 @@ Tags: defer javascript, 3rd party scripts
 Requires at least: 4.5
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 1.2.5
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,10 +71,22 @@ Even if there is no user interaction, scripts will be executed after the specifi
 
 == Upgrade Notice ==
 
+= 1.2.7 =
+Security update. Clear all page and CDN caches after updating.
+
+= 1.2.6 =
+Security update. Clear all page and CDN caches after updating.
+
 = 1.2.5 =
 Security update. Clear all page and CDN caches after updating.
 
 == Changelog ==
+
+= 1.2.7 =
+- Security update for the Timeout setting. Validate the value before saving it and when building the page script.
+
+= 1.2.6 =
+- Hardened HTML attribute handling and isolated the HTML parser from other plugins.
 
 = 1.2.5 =
 - Security - Prevent stored cross-site scripting via forged HTML parser placeholders

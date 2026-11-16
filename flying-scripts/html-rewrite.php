@@ -1,5 +1,5 @@
 <?php
-include('lib/dom-parser.php');
+require_once __DIR__ . '/lib/dom-parser.php';
 
 function flying_scripts_is_keyword_included($content, $keywords)
 {
@@ -31,14 +31,8 @@ function flying_scripts_rewrite_html($html)
             return $html;
         }
 
-
-        // Do not let input impersonate the parser's internal placeholders.
-        if (strpos($html, '___noise___') !== false) {
-            return $html;
-        }
-
         // Parse HTML
-        $newHtml = str_get_html($html);
+        $newHtml = \FlyingScripts\Html\str_get_html($html);
 
         // Not HTML, return original
         if (!is_object($newHtml)) {
